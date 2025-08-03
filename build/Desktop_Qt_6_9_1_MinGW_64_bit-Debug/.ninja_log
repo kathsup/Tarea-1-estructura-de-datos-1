@@ -1,0 +1,20 @@
+# ninja log v6
+5	269	7759666186568442	sisBancario_autogen/timestamp	402cfb6b6e526bb4
+5	269	7759666186568442	sisBancario_autogen/mocs_compilation.cpp	402cfb6b6e526bb4
+5	269	7759666186568442	C:/Users/Lenovo/Documents/sisBancario/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/sisBancario_autogen/timestamp	402cfb6b6e526bb4
+5	269	7759666186568442	C:/Users/Lenovo/Documents/sisBancario/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/sisBancario_autogen/mocs_compilation.cpp	402cfb6b6e526bb4
+271	351	7759666187274065	CMakeFiles/sisBancario.dir/sisBancario_autogen/mocs_compilation.cpp.obj	ebc486d0ad88ebd8
+275	816	7759666187304160	CMakeFiles/sisBancario.dir/main.cpp.obj	1a4974c4d08788e1
+819	977	7759666192743988	sisBancario.exe	55b92f1def782cfa
+10	173	7759668382166080	sisBancario_autogen/timestamp	402cfb6b6e526bb4
+10	173	7759668382166080	sisBancario_autogen/mocs_compilation.cpp	402cfb6b6e526bb4
+10	173	7759668382166080	C:/Users/Lenovo/Documents/sisBancario/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/sisBancario_autogen/timestamp	402cfb6b6e526bb4
+10	173	7759668382166080	C:/Users/Lenovo/Documents/sisBancario/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/sisBancario_autogen/mocs_compilation.cpp	402cfb6b6e526bb4
+174	769	7759668383828384	CMakeFiles/sisBancario.dir/main.cpp.obj	1a4974c4d08788e1
+770	911	7759668389796263	sisBancario.exe	55b92f1def782cfa
+61	313	7759668891545986	sisBancario_autogen/timestamp	402cfb6b6e526bb4
+61	313	7759668891545986	sisBancario_autogen/mocs_compilation.cpp	402cfb6b6e526bb4
+61	313	7759668891545986	C:/Users/Lenovo/Documents/sisBancario/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/sisBancario_autogen/timestamp	402cfb6b6e526bb4
+61	313	7759668891545986	C:/Users/Lenovo/Documents/sisBancario/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/sisBancario_autogen/mocs_compilation.cpp	402cfb6b6e526bb4
+316	1087	7759668894094062	CMakeFiles/sisBancario.dir/main.cpp.obj	1a4974c4d08788e1
+1087	1246	7759668901808747	sisBancario.exe	55b92f1def782cfa

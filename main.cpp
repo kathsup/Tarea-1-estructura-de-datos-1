@@ -35,7 +35,7 @@ int main(){
             std::time_t date = std::time(nullptr);
             std::string fecha = std::ctime(&date);
 
-            //ticket nuevo(codigo, fecha);
+
             nuevo.setCodigo(codigo);
             nuevo.setFecha(fecha);
             cola.agregarCola(nuevo);
@@ -76,13 +76,14 @@ int main(){
             std::cout<<"Ingrese el ticket a buscar: ";
             std::cin>>valor;
 
-            std::cout<<"valor buscado: "<<std::endl;
-            cola.buscar(valor);
+            bool encontrado = cola.buscar(valor);
+            std::cout << (encontrado ? "SI" : "NO") << std::endl;
             break;
         }
         case 6:{
             std::cout<<"limpiar lista"<<std::endl;
             cola.limpiarLista();
+            contador = 1;
             std::cout<<"Se ha limpiado la lista"<<std::endl;
             break;
         }

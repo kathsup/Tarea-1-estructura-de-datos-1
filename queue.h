@@ -82,7 +82,7 @@ public:
     void imprimirCola(){
         //primer caso: ver si esta vacio
         if (isEmpty()) {
-        std::cout << "\nQueue esta vacio." << std::endl;
+        std::cout << "\nLa lista esta vacia." << std::endl;
         return;
         }
         //caso dos: imprimir todo
@@ -97,25 +97,23 @@ public:
 
     }
 
-    void buscar(std::string cod){
+    bool buscar(std::string cod){
         Node<T> *aux = inicio;
-        bool encontrado = false;
+        //bool encontrado = false;
 
         while(aux!=nullptr){
 
             if(aux->dato.getCodigo() == cod){
-                std::cout<<aux->dato.toString()<<std::endl;
-                encontrado = true;
-                break;
+                //std::cout<<aux->dato.toString()<<std::endl;
+                //encontrado = true;
+                //break;
                 return true;
             }
             aux = aux->siguiente;
 
 
     }
-        if (!encontrado) {
-            std::cout << "No se encontro el ticket: " << cod << std::endl;
-        }
+        return false;
 
     }
 

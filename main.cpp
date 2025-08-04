@@ -4,6 +4,7 @@
 #include<ctime>
 
 
+
 int main(){
 
     int opcion = 0;
@@ -13,6 +14,12 @@ int main(){
     do{
         std::cout<<"-----Menu-----\n";
         std::cout<<"1. agregar a la cola"<<std::endl;
+        std::cout<<"2. obtener el siguiente"<<std::endl;
+        std::cout<<"3. ver el siguiente"<<std::endl;
+        std::cout<<"4. imprimir lista"<<std::endl;
+        std::cout<<"5. buscar un elemento"<<std::endl;
+        std::cout<<"6. vaciar cola"<<std::endl;
+        std::cout<<"7. salir"<<std::endl;
         std::cout << "Ingrese opcion: "<<std::endl;
         std::cin >> opcion;
 
@@ -20,7 +27,7 @@ int main(){
 
         case 1:{
 
-            std::cout<<"Agregar a cola"<<std::endl;
+            std::cout<<"Agregar a cola (enqueue)"<<std::endl;
 
             ticket nuevo("","");
 
@@ -38,6 +45,45 @@ int main(){
 
             break;}
         case 2:{
+            std::cout<<"obtener el siguiente (dequeue)"<<std::endl;
+
+            if (!cola.isEmpty()) {
+                ticket eliminado = cola.eliminarCola();
+                std::cout << "Eliminado: " << eliminado.toString() << std::endl;
+            } else {
+                std::cout << "No hay tickets en la cola." << std::endl;
+            }
+
+            break;
+        }
+        case 3:{
+            std::cout<<"ver el siguiente (peek)"<<std::endl;
+            if(!cola.isEmpty()){
+                ticket mostrar = cola.verSiguiente();
+                std::cout<< "siguiente: "<<mostrar.toString()<<std::endl;
+            }
+
+            break;
+        }
+        case 4: {
+            std::cout<<"imprimir lista"<<std::endl;
+            cola.imprimirCola();
+            break;
+        }
+        case 5: {
+            std::string valor;
+            std::cout<<"Buscar un elemento"<<std::endl;
+            std::cout<<"Ingrese el ticket a buscar: ";
+            std::cin>>valor;
+
+            std::cout<<"valor buscado: "<<std::endl;
+            cola.buscar(valor);
+            break;
+        }
+        case 6:{
+            std::cout<<"limpiar lista"<<std::endl;
+            cola.limpiarLista();
+            std::cout<<"Se ha limpiado la lista"<<std::endl;
             break;
         }
         case 7:{

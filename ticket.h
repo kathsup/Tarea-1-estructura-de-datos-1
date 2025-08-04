@@ -19,7 +19,9 @@ public:
         fecha = f;
     }
 
-
+    std::string getCodigo() const {
+        return codigo;
+    }
 
     void setFecha(std::string f){
         fecha = f;
@@ -28,6 +30,11 @@ public:
     void setCodigo(std::string c){
         codigo = c;
     };
+
+    std::string toString() const {
+        return "Codigo: " + codigo + ", Fecha: " + fecha;
+    }
+
 
 };
 
